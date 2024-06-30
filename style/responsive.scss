@@ -1,0 +1,219 @@
+@import'config.scss';
+
+@include media-sm {
+    .erfahrung__bio-image {
+        height: auto;
+        padding: 1rem;
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .erfahrung__bio {
+        .text-secondary {
+            font-size: 2rem;
+        }
+    }
+
+    .erfahrung {
+        .jobs__job {
+          &:hover {
+            &::after {
+              top: 38vh; 
+            }
+          }
+        }
+      }
+
+      .kontakt {
+        padding-top: 10vh; 
+
+        h2 {
+            font-size: 1.6rem; 
+            margin-bottom: 3rem; 
+        }
+
+        .text-secondary {
+            font-size: 25px; 
+        }
+
+        &__list {
+            font-size: 1.2rem; 
+        }
+
+        &__email, &__telefon {
+            padding: 10px; 
+        }
+    }
+}
+
+@include media-md {
+
+    .erfahrung__bio-image {
+        height: auto;
+        padding: 1rem;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .erfahrung__bio {
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+    .erfahrung {
+        .jobs__job {
+          &:hover {
+            &::after {
+                top: 28vh; 
+            }
+          }
+        }
+      }
+
+
+    .projekat {
+        &__bio-image {
+            height: 40vh;
+        }
+
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+
+    .kontakt__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kontakt {
+      padding-top: 15vh; 
+
+      h2 {
+          font-size: 2.5rem;
+          margin-bottom: 4rem; 
+      }
+
+      .text-secondary {
+          font-size: 30px; 
+      }
+
+      &__list {
+          font-size: 1.4rem; 
+      }
+
+      &__email, &__telefon {
+          padding: 12px; 
+      }
+  }
+}
+
+@include media-lg {
+
+    .erfahrung__bio-image {
+        height: 70vh;
+      }
+    
+      .erfahrung__bio {
+        .text-secondary {
+          font-size: 4rem;
+        }
+      }
+
+      .erfahrung {
+        .jobs__job {
+          &:hover {
+            &::after {
+                top: 27vh; 
+            }
+          }
+        }
+      }
+
+    .projekat {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+    }
+
+    .kontakt {
+      padding-top: 15vh; 
+
+      h2 {
+          font-size: 2.5rem; 
+          margin-bottom: 4rem; 
+      }
+
+      .text-secondary {
+          font-size: 30px; 
+      }
+
+      &__list {
+          font-size: 1.4rem; 
+      }
+
+      &__email, &__telefon {
+          padding: 12px; 
+      }
+  }
+
+}
+
+@include media-x1 {
+
+    .erfahrung__bio-image {
+        height: 50vh;
+      }
+    
+      .erfahrung__bio {
+        .text-secondary {
+          font-size: 5rem;
+        }
+      }
+
+      .erfahrung {
+        .jobs__job {
+          &:hover {
+            &::after {
+                top: 30vh; 
+            }
+          }
+        }
+      }
+
+    .projekat__bio-image {
+        height: 50vh;
+
+    }
+
+    .kontakt {
+      padding-top: 15vh; 
+
+      h2 {
+          font-size: 2.5rem; 
+          margin-bottom: 4rem; 
+      }
+
+      .text-secondary {
+          font-size: 35px; 
+      }
+
+      &__list {
+          font-size: 1.4rem; 
+      }
+
+      &__email, &__telefon {
+          padding: 12px; 
+      }
+  }
+
+}

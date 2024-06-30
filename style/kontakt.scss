@@ -1,0 +1,81 @@
+@import 'config.scss';
+
+
+.kontakt {
+    height: 100%;
+    padding-top: 20vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.3)
+        ),
+        url("../images/Bild_1.jpg") center top;
+    background-size: cover;
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 5rem;
+        color: $quaternary-color;
+        font-style: italic;  
+        font-weight: bolder;   
+        text-align: center;   
+    }
+
+    .text-secondary {
+        color: $secondary-color;
+        font-size: 35px;
+        font-style: italic;
+        font-weight: bolder;
+        text-align: center; 
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 5px;
+        font-size: 1.5rem;
+    }
+
+    &__email, &__telefon {
+        border-bottom: 2px solid $tertiary-color;
+        padding: 15px;
+        width: 100%; 
+        text-align: center; 
+    }
+
+    &__dat {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .social-icons {
+        position: initial;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center; 
+    }
+
+    @keyframes glow {
+        0%, 100% {
+            color: $tertiary-color;
+            text-shadow: 0 0 5px $tertiary-color, 0 0 10px $quaternary-color, 0 0 15px $quaternary-color, 0 0 20px $quaternary-color, 0 0 25px $quaternary-color;
+        }
+        50% {
+            color: $quaternary-color;
+            text-shadow: 0 0 20px $quaternary-color, 0 0 30px $quaternary-color, 0 0 40px $quaternary-color, 0 0 50px $quaternary-color;
+        }
+    }
+
+    .glow {
+        animation: glow 1s ease-in-out infinite;
+    }
+}
+

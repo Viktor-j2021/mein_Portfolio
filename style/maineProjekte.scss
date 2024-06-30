@@ -1,0 +1,101 @@
+@import'config.scss';
+
+.projekat {
+    padding-bottom: 2rem;
+
+    &__bio-image {
+        height: 40vh;
+        width: 100%;
+        background:
+            linear-gradient(to right,
+                rgba(#272727, 0.9),
+                rgba(#272727, 0.3)),
+            url("../images/Bild_1.jpg") 55% 45%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        .text-secondary {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: $tertiary-color;
+            font-style: italic;
+            font-weight: bolder;
+        }
+    }
+
+    &__items {
+        width: 80vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    &__item {
+        position: relative;
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: $secondary-color;
+            @include transition-ease;
+        }
+
+        &:hover {
+            &::after {
+                top: 0;
+                opacity: 0.9;
+            }
+
+            .projekat__btn {
+                opacity: 1;
+            }
+        }
+    }
+
+    &_btna {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btn {
+        opacity: 0;
+        color: set-text-color($secondary-color);
+        @include transition-ease;
+
+        &:hover {
+            color: set-text-color(set-text-color($secondary-color));
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        transform: rotate(90deg) translate(-3rem, -5rem);
+    }
+}

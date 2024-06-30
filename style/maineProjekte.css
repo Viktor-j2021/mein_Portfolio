@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.projekat {
+  padding-bottom: 2rem;
+}
+.projekat__bio-image {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../images/Bild_1.jpg") 55% 45%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.projekat__bio-image .text-secondary {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.952);
+  font-style: italic;
+  font-weight: bolder;
+}
+.projekat__items {
+  width: 80vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.projekat__item {
+  position: relative;
+  border-bottom: 5px solid #ba62f1;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projekat__item img {
+  width: 100%;
+  height: 100%;
+}
+.projekat__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ba62f1;
+  transition: all 0.5s ease-in-out;
+}
+.projekat__item:hover::after {
+  top: 0;
+  opacity: 0.9;
+}
+.projekat__item:hover .projekat__btn {
+  opacity: 1;
+}
+.projekat_btna {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projekat__btn {
+  opacity: 0;
+  color: rgba(0, 0, 0, 0.916);
+  transition: all 0.5s ease-in-out;
+}
+.projekat__btn:hover {
+  color: rgba(255, 255, 255, 0.952);
+}
+.projekat .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+.projekat footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}/*# sourceMappingURL=maineProjekte.css.map */

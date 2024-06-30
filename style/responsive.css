@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 238px) {
+  .erfahrung__bio-image {
+    height: auto;
+    padding: 1rem;
+  }
+  .erfahrung__bio-image p {
+    font-size: 15px;
+  }
+  .erfahrung__bio .text-secondary {
+    font-size: 2rem;
+  }
+  .erfahrung .jobs__job:hover::after {
+    top: 38vh;
+  }
+  .kontakt {
+    padding-top: 10vh;
+  }
+  .kontakt h2 {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+  .kontakt .text-secondary {
+    font-size: 25px;
+  }
+  .kontakt__list {
+    font-size: 1.2rem;
+  }
+  .kontakt__email, .kontakt__telefon {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .erfahrung__bio-image {
+    height: auto;
+    padding: 1rem;
+  }
+  .erfahrung__bio-image p {
+    font-size: 18px;
+  }
+  .erfahrung__bio .text-secondary {
+    font-size: 3rem;
+  }
+  .erfahrung .jobs__job:hover::after {
+    top: 28vh;
+  }
+  .projekat__bio-image {
+    height: 40vh;
+  }
+  .projekat__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projekat .text-secondary {
+    font-size: 3rem;
+  }
+  .kontakt__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .kontakt {
+    padding-top: 15vh;
+  }
+  .kontakt h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+  .kontakt .text-secondary {
+    font-size: 30px;
+  }
+  .kontakt__list {
+    font-size: 1.4rem;
+  }
+  .kontakt__email, .kontakt__telefon {
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .erfahrung__bio-image {
+    height: 70vh;
+  }
+  .erfahrung__bio .text-secondary {
+    font-size: 4rem;
+  }
+  .erfahrung .jobs__job:hover::after {
+    top: 27vh;
+  }
+  .projekat__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .kontakt {
+    padding-top: 15vh;
+  }
+  .kontakt h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+  .kontakt .text-secondary {
+    font-size: 30px;
+  }
+  .kontakt__list {
+    font-size: 1.4rem;
+  }
+  .kontakt__email, .kontakt__telefon {
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .erfahrung__bio-image {
+    height: 50vh;
+  }
+  .erfahrung__bio .text-secondary {
+    font-size: 5rem;
+  }
+  .erfahrung .jobs__job:hover::after {
+    top: 30vh;
+  }
+  .projekat__bio-image {
+    height: 50vh;
+  }
+  .kontakt {
+    padding-top: 15vh;
+  }
+  .kontakt h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+  .kontakt .text-secondary {
+    font-size: 35px;
+  }
+  .kontakt__list {
+    font-size: 1.4rem;
+  }
+  .kontakt__email, .kontakt__telefon {
+    padding: 12px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
